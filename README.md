@@ -1,6 +1,6 @@
 # m4l-TapPanZeit
 
-This is an audio effect made in Max For Live that implements a multitap (up to 128 individual taps) delay effect with visual control over inter-tap timing and pan position. It can serve as a simple delay, a strange reverb, or incredibly complicated combination of the two.
+This is a Max for Live audio effect that implements a multitap (up to 128) delay effect with visual control over inter-tap timing, pan position, and volume. It can serve as a simple delay, a strange reverb, or incredibly complicated combination of the two.
 
 ![The Interface](images/device.gif)
 
