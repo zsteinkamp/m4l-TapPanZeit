@@ -1,12 +1,8 @@
 # m4l-TapPanZeit
 
-This is an audio effect made in Max For Live that implements a bucket-brigade multitap (up to 128 individual taps) delay effect with visual control over inter-tap timing and pan position. It can serve as a simple delay, or incredibly complicated combination of the two.
+This is an audio effect made in Max For Live that implements a multitap (up to 128 individual taps) delay effect with visual control over inter-tap timing and pan position. It can serve as a simple delay, a strange reverb, or incredibly complicated combination of the two.
 
 ![The Interface](images/device.gif)
-
-I originally had an idea that there should be a function in a reverb that lets you control the pan position of the reverb tail at specific times after the initial impulse. I didn't find that in the reverbs that I had, so I decided to mock one up. My first attempt was to use an audio effect rack with five chains spread across the stereo range. Each chain had a delay followed by a reverb. The chain delay increased in some increment across the chains, e.g. chain 1 was 0ms delay, chain 2 was 100ms, chain 3 was 200ms, etc. This had the effect of making "reverb bursts" across the stereo field, which was cool. But it wasn't what I had in mind exactly.
-
-One thing led to another and I embraced my love for delays with this concept of controlling a tail. There is a configurable number of taps (up to 128) that are spaced at a configurable time interval. There are visual controls for pan position, volume, and time coefficient that give you very direct control over some wild effects.
 
 ## Demos
 
@@ -15,6 +11,12 @@ Check out a [feature walkthrough on YouTube](https://youtu.be/S1JEmtOJb3w), as w
 ## Installation / Setup
 
 If you just want to download and install the device, then go to the [Releases Page](https://github.com/zsteinkamp/m4l-TapPanVerb/releases) and download the newest version there.
+
+## Background
+
+I originally had an idea that there should be a function in a reverb that lets you control the pan position of the reverb tail at specific times after the initial impulse. I didn't find that in the reverbs that I had, so I decided to mock one up. My first attempt was to use an audio effect rack with five chains spread across the stereo range. Each chain had a delay followed by a reverb. The chain delay increased in some increment across the chains, e.g. chain 1 was 0ms delay, chain 2 was 100ms, chain 3 was 200ms, etc. This had the effect of making "reverb bursts" across the stereo field, which was cool. But it wasn't what I had in mind exactly.
+
+One thing led to another and I embraced my love for delays with this concept of controlling a tail. There is a configurable number of taps (up to 128) that are spaced at a configurable time interval. There are visual controls for pan position, volume, and time coefficient that give you very direct control over some wild effects.
 
 ### Changelog
 
