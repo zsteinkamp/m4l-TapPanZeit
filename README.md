@@ -18,7 +18,7 @@ I originally had an idea that there should be a function in a reverb that lets y
 
 One thing led to another and I embraced my love for delays with this concept of controlling a tail. There is a configurable number of taps (up to 128) that are spaced at a configurable time interval. There are visual controls for pan position, volume, and time coefficient that give you very direct control over some wild effects.
 
-### Changelog
+## Changelog
 
 * [v11](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v11/TapPanZeit-v11.amxd) - 2024-11-22 - Add meters behind each `[function]` object to visualize what each tap is doing with respect to the function.
 * [v10](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v10/TapPanZeit-v10.amxd) - 2024-11-20 - Small refinements and improvements from [How It's Made](https://www.youtube.com/watch?v=Mn0RBMoXq_c) video prep.
@@ -34,28 +34,28 @@ One thing led to another and I embraced my love for delays with this concept of 
 
 ## Usage
 
-### Taps
+#### Taps
 This knob controls how many taps are in the tap field.
 
-### Time Base
+#### Time Base
 This knob controls the default delay between each tap in the field.
 
-### Tap Time Factor
+#### Tap Time Factor
 This is a visual input to control each tap's relative delay time. Pull the line toward zero to speed up the taps, or up to one to slow it back down. Shift-click to remove points. Alt-drag to adjust curve.
 
-### Panning Path
+#### Panning Path
 This is a visual control that lets you position each tap in stereo space.  Draw a line to indicate where, from left to right, each tap should be placed. Shift-click to remove points. Alt-drag to adjust curve.
 
-### Tap Output Volume
+#### Tap Output Volume
 This controls the output of each tap, so you can make the taps fade in or out or anything in between. Shift-click to remove points. Alt-drag to adjust curve.
 
-### Dry Volume
+#### Dry Volume
 This knob controls how much of the original input signal is sent to the device output.
 
-### Wet Volume
+#### Wet Volume
 This knob controls how much of the tap output signal is sent to the device output.
 
-### Feedback Amount
+#### Feedback Amount
 This knob controls how much of the output signal is fed back into the pre-reverb section.
 
 ## TODO
