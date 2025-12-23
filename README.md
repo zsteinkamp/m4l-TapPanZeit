@@ -20,6 +20,7 @@ One thing led to another and I embraced my love for delays with this concept of 
 
 ## Changelog
 
+* [v13](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v13/TapPanZeit-v13.amxd) - 2025-12-23 - Fix problem with the Pan display in Live 12.3. Thanks Francisco for the bug report!
 * [v12](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v12/TapPanZeit-v12.amxd) - 2025-10-01 - Update checks; Help popup.
 * [v11](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v11/TapPanZeit-v11.amxd) - 2024-11-22 - Add meters behind each `[function]` object to visualize what each tap is doing with respect to the function.
 * [v10](https://github.com/zsteinkamp/m4l-TapPanZeit/releases/download/v10/TapPanZeit-v10.amxd) - 2024-11-20 - Small refinements and improvements from [How It's Made](https://www.youtube.com/watch?v=Mn0RBMoXq_c) video prep.
