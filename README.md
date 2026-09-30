@@ -12,6 +12,22 @@ Check out a [feature walkthrough on YouTube](https://youtu.be/S1JEmtOJb3w), as w
 
 If you just want to download and install the device, then go to the [Releases Page](https://github.com/zsteinkamp/m4l-TapPanVerb/releases) and download the newest version there.
 
+## VST3 / AU Version
+
+A native plugin port lives in [`vst/`](vst/) (C++ / JUCE). It builds VST3, AU and a Standalone app.
+
+```sh
+brew install cmake   # if needed
+cmake -S vst -B vst/build -DCMAKE_BUILD_TYPE=Release
+cmake --build vst/build --config Release -j
+# → vst/build/TapPanZeit_artefacts/Release/{VST3,AU,Standalone}/
+cp -R vst/build/TapPanZeit_artefacts/Release/VST3/TapPanZeit.vst3 ~/Library/Audio/Plug-Ins/VST3/
+```
+
+Run the offline DSP checks with `cmake --build vst/build --target TapPanZeitTests && vst/build/TapPanZeitTests_artefacts/Release/TapPanZeitTests`.
+
+Differences from the M4L device: total delay across all taps is capped at 120 s, delay-time changes glide instead of jumping, and the curve shape for segments is a close approximation of Max's `[function]` curve mode.
+
 ## Background
 
 I originally had an idea that there should be a function in a reverb that lets you control the pan position of the reverb tail at specific times after the initial impulse. I didn't find that in the reverbs that I had, so I decided to mock one up. My first attempt was to use an audio effect rack with five chains spread across the stereo range. Each chain had a delay followed by a reverb. The chain delay increased in some increment across the chains, e.g. chain 1 was 0ms delay, chain 2 was 100ms, chain 3 was 200ms, etc. This had the effect of making "reverb bursts" across the stereo field, which was cool. But it wasn't what I had in mind exactly.
