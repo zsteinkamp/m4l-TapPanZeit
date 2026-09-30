@@ -14,19 +14,7 @@ If you just want to download and install the device, then go to the [Releases Pa
 
 ## VST3 / AU Version
 
-A native plugin port lives in [`vst/`](vst/) (C++ / JUCE). It builds VST3, AU and a Standalone app.
-
-```sh
-brew install cmake   # if needed
-cmake -S vst -B vst/build -DCMAKE_BUILD_TYPE=Release
-cmake --build vst/build --config Release -j
-# → vst/build/TapPanZeit_artefacts/Release/{VST3,AU,Standalone}/
-cp -R vst/build/TapPanZeit_artefacts/Release/VST3/TapPanZeit.vst3 ~/Library/Audio/Plug-Ins/VST3/
-```
-
-Run the offline DSP checks with `cmake --build vst/build --target TapPanZeitTests && vst/build/TapPanZeitTests_artefacts/Release/TapPanZeitTests`.
-
-Differences from the M4L device: total delay across all taps is capped at 120 s, delay-time changes glide instead of jumping, and the curve shape for segments is a close approximation of Max's `[function]` curve mode.
+A native VST3 / AU plugin version (macOS + Windows) lives in its own repo: [zsteinkamp/juce-TapPanZeit](https://github.com/zsteinkamp/juce-TapPanZeit).
 
 ## Background
 
